@@ -1,0 +1,97 @@
+
+La ingeniería eléctrica y computacional está encargada de solucionar dos tipos de
+problemas: (1) la producción o transmisión de energía eléctrica y (2) la transmisión o 
+procesamiento de información. Los sistemas de comunicación están diseñados para 
+transmitir información.
+
+Es importante entender que los sistemas de comunicación y los sistemas de energía eléctrica
+tienen un conjunto de restricciones muy marcadas. Las formas de onda en los sistemas de energía
+eléctrica son generalmente conocidas, además de que el interés radica en el diseño del sistema para
+que presente una mínima pérdida de energía.
+
+Las formas de onda en los sistemas de comunicación presentes en el receptor (usuario) son
+desconocidas hasta que se reciben, de otra manera no se transmitiría información alguna ni habría
+necesidad del sistema de comunicación.
+
+Los sistemas de comunicación están diseñados para transmitir a los receptores información
+que contiene formas de onda. Existen muchas posibilidades de seleccionar formas de onda para
+presentar la información.
+
+En los sistemas de comunicación, la forma de onda recibida es usualmente dividida en parte 
+deseada que contiene la información o señal, y en la parte residual o indeseada, llamada ruido.
+Las formas de onda se representarán mediante expresiones matemáticas
+directas, o con series ortogonales, como las de Fourier. Las propiedades de estas formas de 
+onda tales como su valor de DC, su valor cuadrático medio (RMS), potencia normalizada, espectro 
+de magnitud, espectro de fase, densidad espectral de potencia y ancho de banda son también 
+establecidas. Además se estudiarán los efectos de la filtración lineal.
+
+La forma de onda de interés puede ser el voltaje como una función del tiempo, $v(t)$, 
+o la corriente como una función del tiempo, $i(t)$. Las mismas técnicas matemáticas 
+pueden utilizarse cuando se trabaja con cualquiera de estos tipos de forma de onda. Por 
+lo tanto, como enfoque general, las formas de onda se representarán por medio de $w(t)$ 
+cuando el análisis se aplique a cualesquier caso.
+\eject
+\noindent{\bf Formas de onda físicamente realizables}\\
+Las formas de onda prácticas que son físicamente realizables (es decir, medibles en un laboratorio)
+satisfacen varias condiciones:
+\begin{enumerate}
+\item La forma de onda tiene valores significativos diferentes a cero sobre un intervalo compuesto
+de tiempo f\/inito.
+\item El espectro de la forma de onda tiene valores significativos sobre un intervalo compuesto de
+frecuencia f\/inito.
+\item La forma de onda es una función continua en el tiempo.
+\item La forma de onda tiene un valor pico f\/inito.
+\item La forma de onda sólo tiene valores reales. Esto es, en cualquier momento no puede tener un
+valor complejo de $a + jb$, donde b es diferente de cero.
+\end{enumerate}
+La primera condición es necesaria debido a que los sistemas (y sus formas de onda) parecen
+existir por una cantidad finita de tiempo; las señales físicas también producen una cantidad finita de
+energía. La segunda se requiere debido a que cualquier medio de transmisión, ya sean cables, cables
+coaxiales, guías de onda o cable de fibra óptica, tienen un ancho de banda restringido. La tercera con-
+dición es una consecuencia de la segunda y se hará más clara con la ayuda del análisis espectral. 
+La cuarta es menester porque los dispositivos físicos se destruyen si
+está presente un valor infinito de voltaje o de corriente dentro del dispositivo. La quinta condición
+resulta del hecho de que sólo las formas de onda reales pueden observarse en el mundo real a pesar
+de que las propiedades de una forma de onda, como los espectros, pueden ser complejos
+
+Los modelos matemáticos que no cumplen alguna o todas las condiciones mencionadas se utilizan por 
+una razón principal: simplificar el análisis ma\-te\-má\-ti\-co. Sin embargo, si se es cuidadoso
+con el modelo matemático, puede obtenerse el resultado correcto cuando se interpreta la respuesta
+adecuadamente.
+Por ejemplo, considere que la forma de onda digital mostrada en la figura 2-1 (pag. 35 de 
+\cite{Couch}) presenta discontinuidades durante los tiempos de conmutación. Esta situación no 
+cumple la tercera condición, aquella sobre la necesidad de que la forma de onda física sea continua. 
+La forma de onda física tiene una duración finita (decae a cero antes de $t = \pm\infty$), pero 
+la duración de la forma de onda matemática se extiende hasta el infinito.
+
+En otras palabras, el modelo matemático asume que la forma de onda física ha existido en su
+condición de estado estable durante todo el tiempo. El análisis espectral del modelo aproximará los
+resultados correctos, excepto para los componentes con frecuencias extremadamente altas. La potencia 
+promedio que se calcula del modelo resultará en el valor correcto para la potencia promedio de
+la señal física que se medirá durante un intervalo de tiempo adecuado. La energía total de la señal
+del modelo matemático será infinita porque se extiende a un tiempo infinito, mientras que la de la
+señal física será finita. Por consiguiente, el modelo no generará el valor correcto para la energía 
+total de la señal física sin utilizar alguna información adicional. Sin embargo, el modelo puede 
+utilizarse para calcular la energía de la señal física durante un intervalo de tiempo finito. 
+Se dice que el modelo matemático es una señal de potencia debido a que tiene la propiedad de 
+potencia finita (y energía infinita), mientras que la forma de onda física es una señal de energía 
+debido a que tiene energía finita. (Las definiciones matemáticas para las señales de potencia y 
+energía se presentarán 
+más adelante.) Todas las señales físicas son señales de energía, aunque a menudo se utilizan 
+modelos matemáticos de señales de potencia para simplificar el análisis. 
+\ \\\ \\
+%\subsection{Clasificación de señales}
+\addcontentsline{toc}{subsection}{A. Clasif\/icación de señales.}
+\noindent{\bf {\large A. Clasif\/icación de señales.}}\par
+En resumen, las formas de onda se clasifican como señales o ruido, digitales o analógicas, 
+determinísticas o no determinísticas, físicamente realizables o físicamente no realizables y 
+pertenecientes a dos tipos: de potencia o de energía. La siguiente sección presentará 
+clasificaciones adicionales, como periódicas y no periódicas.\par
+\noindent Nota de clase 2015.03.05\\
+\noindent Chavez Hernández Sergio Yair\\
+\noindent Contreras Díaz Iván\\
+
+
+
+
+
